@@ -1,0 +1,126 @@
+body {
+    background: dimgray;
+}
+
+.home-content {
+    background-image: url('home.jpg');
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.70);
+    background-blend-mode: multiply;
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+}
+
+.home {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+section {
+    min-height: 100vh;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    background: transparent;
+    transition: background-color 0.5s ease;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+.navbar.scrolled {
+    background-color: brown;
+}
+
+span {
+    color: brown;
+}
+
+.home-content h1 {
+    color: white;
+    margin-top: 150px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.home-content h3 {
+    color: white;
+    text-align: center;
+}
+
+.about-content {
+    background: darkcyan;
+    width: 100%;
+    height: 100vh;
+}
+
+.home-content p {
+    color: white;
+    text-align: center;
+}
+
+.social-media {
+    text-align: center;
+}
+
+.social-media a {
+    display: inline-flex;
+    text-decoration: none;
+    color: white;
+    background: transparent;
+    height: 50px;
+    padding: 15px;
+    border-radius: 100px;
+    margin: 10px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 1px 1px 50px 1px brown;
+}
+
+.social-media a:hover {
+    color: white;
+    background: brown;
+    transition: .3s ease;
+    box-shadow: 1px 1px 50px 1px white;
+}
+
+.btn {
+    background: brown;
+    height: 50px;
+    padding: 10px;
+    font-weight: 900;
+    color: white;
+    display: inline-block;
+    text-align: center;
+    margin-top: 30px;
+    margin-left: 44%;
+}
+
+.btn:hover {
+    color: brown;
+    background: transparent;
+    transition: .3s ease;
+    box-shadow: 1px 1px 50px 1px white;
+    font-size: 18px;
+}
+
+@media (max-width: 798px) {
+    .btn {
+        background: brown;
+        height: 50px;
+        padding: 10px;
+        font-weight: 900;
+        color: white;
+        display: inline-block;
+        text-align: center;
+        margin-top: 20px;
+        margin-left: 27%;
+    }
+}
